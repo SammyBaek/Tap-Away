@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
         mButton = (ImageButton) findViewById(R.id.moleButton);
         scoreView = (TextView) findViewById(R.id.scoreView);
         timeView = (TextView) findViewById(R.id.timerView);
+
+        setStartingPlace();
     }
 
     public void clickedButton(View v) {
@@ -37,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
             startGame();
         } else {
             scoreView.setText("Score: " + ++score);
-            Log.d(TAG, "clickedButton: " + mRelativeLayoutMap.getHeight() + " " + mRelativeLayoutMap.getWidth());
             mButton.setX((float) (Math.random() * (mRelativeLayoutMap.getWidth() - mButton.getWidth())));
             mButton.setY((float) (Math.random() * (mRelativeLayoutMap.getHeight() - mButton.getHeight())));
         }
@@ -45,13 +46,14 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void startGame() {
-        score = 1;
+        score = 0;
         isPlaying = true;
         scoreView.setText("Score: " + score);
         new CountDownTimer(GAME_TIME, 10) {
+
             @Override
             public void onTick(long millisUntilFinished) {
-                timeView.setText("Time left: " + (1.0 * millisUntilFinished / 1000));
+                timeView.setText(String.format("Time left: %.2f", (1.0 * millisUntilFinished / 1000)));
             }
 
             @Override
@@ -59,10 +61,17 @@ public class MainActivity extends AppCompatActivity {
                 timeView.setText("Finished!");
                 Toast.makeText(getApplicationContext(), "Finished Game!", Toast.LENGTH_LONG).show();
                 isPlaying = false;
+                mButton.setVisibility(View.VISIBLE);
+                setStartingPlace();
             }
         }.start();
 
     }
 
+    private void setStartingPlace() {
+        mButton.setX((mRelativeLayoutMap.getWidth() - mButton.getWidth()) / 2);
+        mButton.setY((mRelativeLayoutMap.getHeight() - mButton.getHeight()) / 2);
+        Log.d(TAG, "setStartingPlace: centered");
+    }
 
 }
