@@ -1,11 +1,15 @@
 package com.baek.sam.tapaway;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.text.InputType;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
@@ -21,9 +25,14 @@ public class MainActivity extends AppCompatActivity {
     private int score;
     private RelativeLayout mRelativeLayoutMap;
     private ImageButton mButton;
-    private TextView scoreView;
+    private TextView highScoreView;
     private ProgressBar timeProgressBar;
     private Button readyButton;
+    private TextView currentScoreView;
+
+    private String[] promptName;
+
+    private int highScore = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,12 +42,13 @@ public class MainActivity extends AppCompatActivity {
         mRelativeLayoutMap = (RelativeLayout) findViewById(R.id.RelativeMap);
         mButton = (ImageButton) findViewById(R.id.moleButton);
         setStartingPlace();
-        scoreView = (TextView) findViewById(R.id.scoreView);
+        highScoreView = (TextView) findViewById(R.id.scoreView);
+        currentScoreView = (TextView) findViewById(R.id.currentScoreView);
         timeProgressBar = (ProgressBar) findViewById(R.id.timeProgressBar);
         readyButton = (Button) findViewById(R.id.readyButton);
         timeProgressBar.setMax(GAME_TIME);
         timeProgressBar.setProgress(GAME_TIME);
-        setStartingPlace();
+        promptName = new String[1];
     }
 
     public void clickReady(View v) {
@@ -54,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
             if (!isPlaying) {
                 startGame();
             } else {
-                scoreView.setText("Score: " + ++score);
+                currentScoreView.setText(++score + "");
                 mButton.setX((float) (Math.random() * (mRelativeLayoutMap.getWidth() - mButton.getWidth())));
                 mButton.setY((float) (Math.random() * (mRelativeLayoutMap.getHeight() - mButton.getHeight())));
             }
@@ -65,9 +75,10 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void startGame() {
-        score = 0;
+        score = 1;
         isPlaying = true;
-        scoreView.setText("Score: " + score);
+        currentScoreView.setText(score + "");
+
         new CountDownTimer(GAME_TIME, 10) {
 
             @Override
@@ -86,11 +97,34 @@ public class MainActivity extends AppCompatActivity {
                 mButton.setVisibility(View.VISIBLE);
 
                 isReady = false;
-                readyButton.setClickable(true);
+
+                if (score > highScore) {
+                    highScore = score;
+                    highScoreView.setText("High Score: " + highScore);
+                }
+                score = 0;
+                currentScoreView.setText(score + "");
                 readyButton.setVisibility(View.VISIBLE);
+                readyButton.setClickable(true);
             }
         }.start();
 
+    }
+
+    private void getName() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("You got a new high score!");
+        final EditText input = new EditText(this);
+        input.setInputType(InputType.TYPE_CLASS_TEXT);
+        builder.setView(input);
+
+        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                promptName[0] = input.getText().toString();
+            }
+        });
+        builder.show();
     }
 
     private void setStartingPlace() {
