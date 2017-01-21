@@ -5,7 +5,9 @@ import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -14,12 +16,14 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
 
     private boolean isPlaying;
+    private boolean isReady;
     private static final int GAME_TIME = 10000;
     private int score;
     private RelativeLayout mRelativeLayoutMap;
     private ImageButton mButton;
     private TextView scoreView;
-    private TextView timeView;
+    private ProgressBar timeProgressBar;
+    private Button readyButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,19 +32,34 @@ public class MainActivity extends AppCompatActivity {
 
         mRelativeLayoutMap = (RelativeLayout) findViewById(R.id.RelativeMap);
         mButton = (ImageButton) findViewById(R.id.moleButton);
+        setStartingPlace();
         scoreView = (TextView) findViewById(R.id.scoreView);
-        timeView = (TextView) findViewById(R.id.timerView);
-
+        timeProgressBar = (ProgressBar) findViewById(R.id.timeProgressBar);
+        readyButton = (Button) findViewById(R.id.readyButton);
+        timeProgressBar.setMax(GAME_TIME);
+        timeProgressBar.setProgress(GAME_TIME);
         setStartingPlace();
     }
 
+    public void clickReady(View v) {
+        if (!isReady) {
+            isReady = true;
+            readyButton.setVisibility(View.INVISIBLE);
+            readyButton.setClickable(false);
+        }
+    }
+
     public void clickedButton(View v) {
-        if (!isPlaying) {
-            startGame();
+        if (isReady) {
+            if (!isPlaying) {
+                startGame();
+            } else {
+                scoreView.setText("Score: " + ++score);
+                mButton.setX((float) (Math.random() * (mRelativeLayoutMap.getWidth() - mButton.getWidth())));
+                mButton.setY((float) (Math.random() * (mRelativeLayoutMap.getHeight() - mButton.getHeight())));
+            }
         } else {
-            scoreView.setText("Score: " + ++score);
-            mButton.setX((float) (Math.random() * (mRelativeLayoutMap.getWidth() - mButton.getWidth())));
-            mButton.setY((float) (Math.random() * (mRelativeLayoutMap.getHeight() - mButton.getHeight())));
+            Toast.makeText(getApplicationContext(), "Click Ready!", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -53,16 +72,22 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onTick(long millisUntilFinished) {
-                timeView.setText(String.format("Time left: %.2f", (1.0 * millisUntilFinished / 1000)));
+//                timeView.setText(String.format("Time left: %.2f", (1.0 * millisUntilFinished / 1000)));
+                timeProgressBar.setProgress((int) millisUntilFinished);
             }
 
             @Override
             public void onFinish() {
-                timeView.setText("Finished!");
                 Toast.makeText(getApplicationContext(), "Finished Game!", Toast.LENGTH_LONG).show();
                 isPlaying = false;
-                mButton.setVisibility(View.VISIBLE);
                 setStartingPlace();
+                timeProgressBar.setProgress(GAME_TIME);
+                mButton.setVisibility(View.INVISIBLE);
+                mButton.setVisibility(View.VISIBLE);
+
+                isReady = false;
+                readyButton.setClickable(true);
+                readyButton.setVisibility(View.VISIBLE);
             }
         }.start();
 
