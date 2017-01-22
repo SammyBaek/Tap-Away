@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\user\Desktop\Tap Game\Tap-Away\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="C:\Users\user\Desktop\Tap Game\Tap-Away\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.1_34271c9b50b63fffc055a8e49fbbc5e8a9c20c54\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\user\Desktop\Tap Game\Tap-Away\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\user\Desktop\Tap Game\Tap-Away\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_9b68fcbddb468954745dcf461802ca98dfd4bf67\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\user\Desktop\Tap Game\Tap-Away\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="C:\Users\user\Desktop\Tap Game\Tap-Away\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.1_cd9fc54e60799b0d6480e4799add97bac195694c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\user\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="C:\Users\user\Desktop\Tap Game\Tap-Away\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_0103f83adf5d37a9d29f1aa525ed237be18f660e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\user\Desktop\Tap Game\Tap-Away\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="C:\Users\user\Desktop\Tap Game\Tap-Away\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_ad08720cd6dda7de6c7e673692a6fa2b062cd935\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\user\Desktop\Tap Game\Tap-Away\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="C:\Users\user\Desktop\Tap Game\Tap-Away\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_7c0db5957da960895c7a2d5b49d46668d07dbc7c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\user\Desktop\Tap Game\Tap-Away\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="C:\Users\user\Desktop\Tap Game\Tap-Away\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_1dae00ece2313c5a23272e2ed2d05213a33fec4d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\user\Desktop\Tap Game\Tap-Away\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="86214e3a9dc6ca85c58cb03fcdb4cbce764ae455">
+        <dex dex="C:\Users\user\Desktop\Tap Game\Tap-Away\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_950c8a0d06572b8170ba9921ad78eb4d95a60aaa\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\user\Desktop\Tap Game\Tap-Away\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="C:\Users\user\Desktop\Tap Game\Tap-Away\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.1_e23d413b551cf3494c1a8444f085c992adcf22b7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\user\Desktop\Tap Game\Tap-Away\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="C:\Users\user\Desktop\Tap Game\Tap-Away\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_d2fe1b9fde55eecdcda3b1049a47b574ba34e8c2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\user\Desktop\Tap Game\Tap-Away\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="C:\Users\user\Desktop\Tap Game\Tap-Away\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_ff27eef4905d9eaf8829fe1092e9a478a816628d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\user\Desktop\Tap Game\Tap-Away\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="C:\Users\user\Desktop\Tap Game\Tap-Away\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_eed05c3f1d97fef5d6ba557ad8edaa16b45f92f2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\user\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.0-beta4\constraint-layout-solver-1.0.0-beta4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a9cb567dc008f570c28531720168f19148da965">
+        <dex dex="C:\Users\user\Desktop\Tap Game\Tap-Away\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.0-beta4_e545acf69ff6fa62ea62c03f756e6056106d52f9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\user\Desktop\Tap Game\Tap-Away\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.0-beta4\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="662d7533b25a666c649c10a16b42edfb95f25a4f">
+        <dex dex="C:\Users\user\Desktop\Tap Game\Tap-Away\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support.constraint-constraint-layout-1.0.0-beta4_b74547e65f5ec6dba12ef79a156a3fd7bf9b6cc8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\user\Desktop\Tap Game\Tap-Away\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="C:\Users\user\Desktop\Tap Game\Tap-Away\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_19dbe146c7eb79487579cac9d2b174353f8b81e2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\user\Desktop\Tap Game\Tap-Away\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="C:\Users\user\Desktop\Tap Game\Tap-Away\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_b0d62e5e9e7a438fd8fec2caca4bd72981069f94\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\user\Desktop\Tap Game\Tap-Away\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="C:\Users\user\Desktop\Tap Game\Tap-Away\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_8a1399893024993feb648a8a9134b9c4fd00f76e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\user\Desktop\Tap Game\Tap-Away\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a8ce9279d35ad3c4d75c0eba5aa84a17f0accbd4">
+        <dex dex="C:\Users\user\Desktop\Tap Game\Tap-Away\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_7d6ecdbc1d7fa0b39e71813267c5cf27e861fb5c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\user\Desktop\Tap Game\Tap-Away\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="C:\Users\user\Desktop\Tap Game\Tap-Away\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_b5fc2ddf2f503a6f849a51492333c571fa7a6e7f\classes.dex" />
+    </item>
+
+</items>
