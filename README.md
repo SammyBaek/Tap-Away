@@ -1,3 +1,3 @@
 # Tap-Away
 
-Simple tap game created for Hack GTeeny 2017
+Simple Android application tap game created for Hack GTeeny 2017 using Android Studio.
